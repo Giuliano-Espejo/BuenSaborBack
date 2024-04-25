@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/empresas")
+@CrossOrigin("*")
 public class EmpresaController extends BaseControllerImpl<Empresa, EmpresaDto,Long, EmpresaFacadeImpl> {
     private static final Logger logger = LoggerFactory.getLogger(EmpresaController.class);
     public EmpresaController(EmpresaFacadeImpl facade) {
